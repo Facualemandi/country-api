@@ -4,7 +4,7 @@ import '../Styles/TotalCountry.css'
 const TotalCountry = (props) => {
   return (
     <>
-      <ul>
+      <ul className="ul_container">
         <li className="das">
            {props.children}
         </li>

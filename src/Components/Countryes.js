@@ -9,7 +9,7 @@ const Countryes = ({ name, capital, img, population, region }) => {
   return (
     <>
      <Link to={`/country/${name}`} className='countryes_cont'>
-        <section className="contianer_country">
+        <main className="contianer_country">
           <img src={img} alt={name} className="img_country" />
 
           <div className="features">
@@ -24,7 +24,7 @@ const Countryes = ({ name, capital, img, population, region }) => {
               Región:<b> {region} </b>
             </p>
           </div>
-        </section>
+        </main>
      </Link>
    
     </>
