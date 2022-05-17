@@ -52,9 +52,17 @@ h1 {
 @media (max-width: 800px) {
   .contianer_country {
     margin: auto;
+
     margin-top: 3vh;
   }
   .countryes_cont {
-    width: 100%;
+    width: 40vh;
+  }
+
+  .features {
+    width: max-content;
+  }
+  h1 {
+    width: 30vh;
   }
 }
