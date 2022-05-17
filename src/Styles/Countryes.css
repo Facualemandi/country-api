@@ -1,0 +1,49 @@
+.contianer_country {
+  height: 35vh;
+  width: auto;
+  margin: 15px;
+  border: 1px solid rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241);
+  box-shadow: 1px 1px 3px 1px rgb(221, 221, 221);
+  border-radius: 5px;
+  margin-bottom: 8vh;
+  cursor: pointer;
+}
+.img_country {
+  width: 100%;
+  height: 15vh;
+}
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+}
+.features {
+  width: 25vh;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 1vh;
+}
+
+.features p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.countryes_cont{
+  text-decoration: none;
+  color: black;
+
+}
+
+.countryes_cont p {
+  font-weight: lighter;
+  font-size: 18px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

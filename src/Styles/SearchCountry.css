@@ -1,0 +1,13 @@
+.input_section{
+    width: 160vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.input_section input{
+    width: 50vh;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(212, 212, 212);
+}
