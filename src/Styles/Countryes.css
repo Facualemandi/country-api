@@ -1,5 +1,5 @@
 .contianer_country {
-  height: 35vh;
+  height: 350px;
   width: auto;
   margin: 15px;
   border: 1px solid rgb(241, 241, 241);
@@ -22,6 +22,7 @@ h1 {
   width: 25vh;
   height: auto;
   margin: auto;
+  padding: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

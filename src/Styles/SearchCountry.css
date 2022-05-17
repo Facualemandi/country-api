@@ -1,13 +1,26 @@
-.input_section{
-    width: 160vh;
-    margin: auto;
-    margin-top: 5vh;
+.input_section {
+  width: 80vmax;
+  margin: auto;
+  margin-top: 5vh;
 }
 
-.input_section input{
-    width: 50vh;
-    height: 45px;
-    border-radius: 5px;
-    border: none;
-    border: 1px solid rgb(212, 212, 212);
+.input_section input {
+  width: 50vh;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 1.5vh;
+  outline: blue;
+}
+
+.container_search{
+    width: 57vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-left: 1.5vh;
+}
+.icon_search{
+    width: 35px;
+    height: 35px;
 }

@@ -1,6 +1,21 @@
-.das{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 80vmax;
-    margin: auto;
+.das {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80vmax;
+  margin: auto;
+}
+@media (max-width: 1470px) {
+  .das {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1180px) {
+  .das {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .das {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
