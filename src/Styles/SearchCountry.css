@@ -13,21 +13,31 @@
   outline: blue;
 }
 
-.container_search{
-    width: 57vh;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    margin-left: 1.5vh;
+.container_search {
+  width: 57vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-left: 1.5vh;
 }
-.icon_search{
-    width: 35px;
-    height: 35px;
+.icon_search {
+  width: 35px;
+  height: 35px;
 }
 
 @media (max-width: 800px) {
   .input_section {
-    grid-template-columns: repeat(1, 1fr);
-    width: 60vh;
+    width: 90%;
+
+  }
+  .input_section input {
+    margin: 0;
+  }
+  .container_search {
+    width: 100%;
+    margin: 0;
+  }
+  .container_search input {
+    margin: 0;
   }
 }
