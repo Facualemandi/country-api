@@ -3,15 +3,13 @@ import { useParams } from "react-router-dom";
 import { helpHttp } from "../Helper/helpHttp";
 import TheCountry from "./TheCountry";
 import Loaders from "../Components/Loaders";
-import SearchCountry from "../Components/SearchCountry";
 
-const OneCountry = () => {
+const OneCountry = ({darkMode}) => {
   const { name } = useParams();
 
   const [isCountry, setIsCountry] = useState([]);
   const [loading, setLoading] = useState(false);
 
-   
 
   useEffect(() => {
     const isFetch = async () => {
@@ -36,6 +34,7 @@ const OneCountry = () => {
     
       {isCountry.map((el) => (
         <TheCountry
+          darkMode={darkMode}
           key={el.name}
           img={el.flag}
           name={el.name}
@@ -48,9 +47,8 @@ const OneCountry = () => {
           currencies={el.currencies[0].name}
           languagesPrincipal={el.languages[0].name}
           borders={el.borders}
-
-        />
-      ))}
+          />
+          ))}
     </>
   );
 };

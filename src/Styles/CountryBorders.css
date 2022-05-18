@@ -1,0 +1,14 @@
+.ul_borders{
+    width: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+.ul_borders li{
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 12px;
+}

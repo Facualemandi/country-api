@@ -2,7 +2,7 @@
   height: 350px;
   width: auto;
   margin: 15px;
-  border: 1px solid rgb(241, 241, 241);
+  border: 1px solid rgb(200, 200, 200);
   background-color: rgb(241, 241, 241);
   box-shadow: 1px 1px 3px 1px rgb(221, 221, 221);
   border-radius: 5px;
@@ -30,6 +30,14 @@ h1 {
   margin-top: 1vh;
 }
 
+.features-active h1{
+   color: rgb(173, 168, 168);
+}
+.features-active p{
+   color: rgb(217, 217, 217);
+}
+
+
 .features p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
@@ -49,7 +57,16 @@ h1 {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.country_darkMode{
+  background-color: rgb(69, 90, 108);
+  transition: 0.5s;
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
+}
+
+
+
 @media (max-width: 800px) {
+
   .contianer_country {
     margin: auto;
 

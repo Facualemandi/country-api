@@ -5,14 +5,16 @@ import "../Styles/Countryes.css";
 
 // navigate pasas el coutnryId
 
-const Countryes = ({ name, capital, img, population, region }) => {
+const Countryes = ({ name, capital, img, population, region, darkMode }) => {
   return (
     <>
-     <Link to={`/country/${name}`} className='countryes_cont'>
-        <main className="contianer_country">
+      <Link to={`/country/${name}`} className="countryes_cont">
+        <main
+          className={`contianer_country ${darkMode && "country_darkMode"}`}
+        >
           <img src={img} alt={name} className="img_country" />
 
-          <div className="features">
+          <div className={`features ${darkMode && 'features-active'}`}>
             <h1>{name}</h1>
             <p>
               Population: <b>{population}</b>
@@ -25,8 +27,7 @@ const Countryes = ({ name, capital, img, population, region }) => {
             </p>
           </div>
         </main>
-     </Link>
-   
+      </Link>
     </>
   );
 };

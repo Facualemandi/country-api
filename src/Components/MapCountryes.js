@@ -5,7 +5,7 @@ import { helpHttp } from "../Helper/helpHttp";
 import Loaders from "./Loaders";
 import SearchCountry from "./SearchCountry";
 
-const MapCountryes = () => {
+const MapCountryes = ({ darkMode }) => {
   const [loading, setLoading] = useState(false);
   const [country, setCountry] = useState([]);
   const [search, setSearch] = useState("");
@@ -36,13 +36,14 @@ const MapCountryes = () => {
 
   return (
     <>
-      <SearchCountry search={search} searcher={searcher} />
+      <SearchCountry search={search} searcher={searcher} darkMode={darkMode} />
 
       {loading && <Loaders />}
       {!loading && (
         <TotalCountry>
           {results.map((el) => (
             <Countryes
+              darkMode={darkMode}
               key={el.name}
               img={el.flag}
               name={el.name}

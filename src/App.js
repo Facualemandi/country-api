@@ -1,17 +1,27 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import DarkMode from "./Components/DarkMode";
 import MapCountryes from "./Components/MapCountryes";
 import OneCountry from "./Pages/OneCountry";
-import SearchCountry from "./Components/SearchCountry";
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-     
+  const [darkMode, setDarkMode] = useState(false);
 
+  const isDarkMode = () => {
+    if (darkMode) {
+      setDarkMode(false);
+    } else {
+      setDarkMode(true);
+    }
+  };
+
+  return (
+    <div className={`App ${darkMode && 'dM-active'}`}>
+      <DarkMode darkMode={darkMode} isDarkMode={isDarkMode} />
       <Routes>
-        <Route path="/country/:name" element={<OneCountry />} />
-        <Route path="/*" element={<MapCountryes />} />
+        <Route path="/country/:name" element={<OneCountry darkMode={darkMode} />} />
+        <Route path="/*" element={<MapCountryes darkMode={darkMode}/>} />
       </Routes>
     </div>
   );

@@ -1,9 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    background-color: rgb(227, 227, 227);
+html {
+  background-color: rgb(227, 227, 227);
+  height: 100vh;
 }

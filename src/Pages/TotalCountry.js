@@ -1,12 +1,12 @@
 import React from "react";
 import '../Styles/TotalCountry.css'
 
-const TotalCountry = (props) => {
+const TotalCountry = ({children}) => {
   return (
     <>
       <ul className="ul_container">
         <li className="das">
-           {props.children}
+           {children}
         </li>
       </ul>
     </>

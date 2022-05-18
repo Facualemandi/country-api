@@ -1,0 +1,30 @@
+.dark_mode {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  width: 7vh;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 3px 1px rgb(199, 199, 199);
+}
+
+.icon_dark {
+  width: 3vh;
+  height: 3vh;
+}
+
+.icon_sun {
+  width: 3vh;
+  height: 3vh;
+  color: rgb(115, 115, 95);
+}
+
+@media (min-width:800px){
+  .dark_mode{
+    display: none;
+  }
+}
