@@ -14,6 +14,7 @@ const TheCountry = ({
   currencies,
   borders,
   darkMode,
+  changeCountry,
 }) => {
   return (
     <>
@@ -63,7 +64,7 @@ const TheCountry = ({
           </h2>
 
           {borders?.map((el) => (
-            <button key={el} className='hola'>{el}</button>
+            <button key={el} className='hola' >{el}</button>
           ))}
 
         </section>

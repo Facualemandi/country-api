@@ -1,11 +1,13 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../Styles/Countryes.css";
 
 // navigate pasas el coutnryId
 
 const Countryes = ({ name, capital, img, population, region, darkMode }) => {
+  // console.log(name)
+
   return (
     <>
       <Link to={`/country/${name}`} className="countryes_cont">

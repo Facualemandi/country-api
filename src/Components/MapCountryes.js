@@ -18,6 +18,7 @@ const MapCountryes = ({ darkMode }) => {
       const [count] = await Promise.all([helpHttp().get(urlApi)]);
 
       setCountry(count);
+      console.log(count);
 
       setLoading(false);
     };

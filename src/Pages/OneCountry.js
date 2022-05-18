@@ -4,8 +4,10 @@ import { helpHttp } from "../Helper/helpHttp";
 import TheCountry from "./TheCountry";
 import Loaders from "../Components/Loaders";
 
-const OneCountry = ({darkMode}) => {
+const OneCountry = ({darkMode,changeCountry}) => {
   const { name } = useParams();
+
+   
 
   const [isCountry, setIsCountry] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -25,6 +27,10 @@ const OneCountry = ({darkMode}) => {
     };
     isFetch();
   }, [name]);
+
+
+
+  
 
   return (
     <>
@@ -47,6 +53,8 @@ const OneCountry = ({darkMode}) => {
           currencies={el.currencies[0].name}
           languagesPrincipal={el.languages[0].name}
           borders={el.borders}
+          changeCountry={changeCountry}
+          alpha3Code={el.alpha3Code}
           />
           ))}
     </>
